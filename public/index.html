@@ -18,370 +18,350 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>YrwynmyrDB</title>
+    -->  <head>
+        <title>Garrett Johnson</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <link href="./styles.css" rel="stylesheet">
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+         <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+         <link href="./main.css" rel="stylesheet" type="main/css"
+    </head>
+    
   </head>
   <style>
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+
+html{
+   margin:0; 
+   padding:0;
 }
-body {
-background-color: lightgrey;	
-	
+input:hover, textarea:hover{
+    outline:none;
+    box-shadow:1px 1px 1px black inset;
 }
-header {
-  width: 100%; 
-  height: auto;
-  padding-top: 15%;
-  padding-bottom: 15%;
-  margin-bottom: 5%;
-  color: black;
-  background-color: #222;
-  no-repeat top right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+body{
+    padding:0 10px;
+    background-color:#D5E5ED;
+    }
+hr{
+   border-color:#D5E5ED; 
 }
 
-.title {
-  padding: 4%;
-  width: 80%;
-  margin: 0 10% 0 10%;
-  border: 1px solid #fff;
-  color: #ff6600;
+.service img{
+   display:block;
+   margin:auto;
+   width:250px; 
+   height:250px;
+   border-radius:120%;
+   box-shadow:2px 2px 2px grey;
 }
-.title img {
-	height: 100%;
-	width: 100%;
-}
-h2 {
-  text-align: center;
+h3{
+    margin:20px auto;
+   text-align:center;
 }
 
-hr {
-  border-color: rgba( 255, 162, 215, 0, 2);
-  background-color: rgba(255, 0, 0, 0.5);
-}
-footer hr {
-  border-color: lightblue;
-  background-color: #222;
-}
-.btn-circle {
-  width: 75px;
-  height: 75px;
-  margin-top: 35%;
-  -webkit-transition: background;
-  0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
-  color: #FFF;
-  border-radius: 50% !important;
-  background: rgba (0, 0, 0, 0.5);
-}
-.btn-circle:focus, .btn-circle:hover {
-  color: green;
-  outline: none;
-  box-shadow: none;
-  background: rgba(255, 165, 210, 0.5);
-}
-.angle-double-down {
-  font-size: 55px;
-}
-.angle-double-up{
-    font-size: 30px;
+.service pre{
+    margin:10px -15px;
+    padding:5px;
+    background-color:#dfdfdf;
+    font-size:24px;
+    font-family:"Dancing script"; 
 }
 
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    z-index: 1;
+header{
+   background-color:#23506b; 
+   padding: 10px;
+   border-bottom:2px solid orange;
+   border-radius:0 0px 10px 10px;
+   color:#fff;
+   }
+   
+h1 span{
+   color:rgb(192,97,0); 
 }
 
-section {
-    font-family: 'Lora';
+.menu{
+   position:scroll;
+   right:30px;
+Deep Learning
+   top: 10px;
+   padding:5px 4px;
+   transition:border .2s linear;
 }
 
-#Rebirther {
-    width: 100%;
-    height: auto;
-    margin-left: 15%;
-    border: 3px solid #d3d3d3;
+ .menu > div{
+   width:35px;
+   height:10px;
+   background-color:#333; 
+   margin:5px 0px;
+   box-shadow:1px 1px 1px grey;
+   border-radius:4px 0px 4px 0px;
+} 
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
-#menuItem {
-    background-color: #f1f1f1;
-    padding: 4% 3% 4% 3%;
-    margin-bottom: 5%;
-}
-#TexMex{
+.change .bar2 {opacity: 0;}
 
-}
-section {
-    font-family: 'Lora';
-}
-.menuItem-left col-4 col-lg-4 ,img{
-	height: 400px;
-	width: 400px;
-	
-	
-	
-	
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-footer {
-  font-size: 12px;
-  color: #989898;
+nav{
+   position:fixed;
+   top:0px;
+   left:-10px;
+   background-color:rgba(2,2,2,0.9);
+   width:50%;
+   height:100%;
+   box-shadow:1px 1px 1px 2px #222;
+   text-align:center;
+   transform:translateX(-100%);
+   transition:transform .6s ease;
 }
-row {
-	
-	height: 400px;
-	width: 500px;
+
+.open{
+   transform:translateX(0); 
 }
-#Content {
-	
-	display: inline-block;
-	
-	
-	  }	
+
+nav ul{
+   display:block; 
+   list-style:none;
+   margin:15px 0;
+}
+nav ul li{
+   text-transform:uppercase; 
+   padding:15px 0;
+   border-bottom:1px solid rgb(165,97,0);
+  
+}
+
+nav ul li a{
+    font-weight:bold;
+   text-decoration:none;
+   color:#fff;
+}
+.about{
+    margin-top:15px;
+    background:url('https://cdn.pixabay.com/photo/2018/07/10/09/09/galaxy-3528123_960_720.jpg') no-repeat ;
+    background-size:100%;
+    border-radius:10px 10px 0 0;
+   
+}
+.qoute{
+    background-color:#efefef;
+   font-family:sans-serif; 
+   font-size:24px;
+   text-align:justify;
+}
+.container2{
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 0px;
+    border-bottom:1px solid;
+    border-radius:0 0 10px 10px;
+    text-align:justify;
+   font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.about  h1, .service h1{
+   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-size:60px;
+   text-align:center;
+   padding:50px 0;
+   color:rgba(255,255,255,0.9);
+}
+.contact h1{
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-size:60px;
+   text-align:center;
+   padding:20px 0;
+   color:rgba(255,255,255,0.9);
+}
+
+.follow h1{
+   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   text-align:center;
+   padding:20px 0;
+   color:rgba(255,255,255,0.9); 
+}
+
+.service{
+    margin-top:18px;
+   background:url('https://lh4.googleusercontent.com/6zCm7zE2f-JnEHl-hoVWYNt1KcK1w0kmY-hGw6jrDiFWDHQmxpeTHTuHYBE3JMYcTv8xjtvdPKMr3CJQM6Ea_lg_8vUhWsH_v4M_AoHYMVkl5zzYp-QP=w170') no-repeat ;
+   background-size:100% 350px; border-radius:10px 10px 0 0;
+}
+.box{
+    margin:15px auto;
+}
+.contact{
+    margin-top:8px;
+    background:url('https://photos.app.goo.gl/TwM77AXF8jDnafrH9') no-repeat;
+    background-size:100% 175px;
+    border-radius:10px 10px 0 0;
+}
+
+.contact > .container2 input[type="text"],[type="email"],[type="tel"]{
+  width: 300px;
+  height: 20px;
+}
+
+.contact > .container2 #msg{
+  height: 200px;
+  width: 300px;
+  box-sizing:border-box;
+}
+.contact input, #msg{
+  border:1px solid;
+  border-radius:4px;
+  padding: 15px 5px;
+  margin-bottom:10px;
+  
+
+}  
+.contact label{
+  font-weight:200;
+  display: inline-block;
+  font-size: 20px;
+  color: #000;
+  padding:20 0 10 0;
+}
+
+.contact > .container2 > button{
+  padding:15px;
+  width:200px;
+  margin:10px 18%;
+  font-weight: 800;
+  letter-spacing:5px;
+  color:#ffffff;
+  box-shadow: 2px 2px 2px grey;
+  text-transform: uppercase;
+  background:#35424a;
+  border-radius: 4px;
+  border:0;
+}
+
+.follow{
+   background:url('http://wallpapercave.com/wp/wp1838899.jpg') no-repeat; 
+    background-size:cover;
+    border-radius:10px 10px;
+    margin-top:4px;
+   
+}
+.follow .container2 ul{
+    list-style-type:none;
+    display:inline-block ;
+    width:100%;
+    height:inherit;
+    margin-left:20px;
+}
+.follow ul li{
+    float:left;
+    width:25%;
+    font-size:35px;
+}
+.follow ul li a {
+    color:#000;
+    text-decoration:none;
+    text-align:center;
+}
+
+footer{
+    font-family:'Serif';
+    margin-top:10px;
+    padding:20px;
+    text-align: center;
+    color:#ffffff;
+    background: #35424a;
+    border-radius:10px 10px 0 0;
+}
+
 </style>
   <body>
     <div id="root"></div>
-     <!--Header-->
-<header class="text-center">
+    <div class="container">    
+     <header>
+         <h1><span>GarrettJohnson</span></h1>
+         <div class="menu">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         </div>
+    <nav class="nav1">
+         <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#1">About Plibt_BLOOP-AI</a></li>
+         <li><a href="#2">YrwynmyrDB</a></li>
+         <li><a href="#3">Contact Us</a></li>
+         </ul>
+     </nav>
+     </header>
+    
+         <div id="1" class="about">
+      <h1>Plibt_BLOOP-AI</h1>
+      <div class="container2">Hello world I am <strong>Plibt_BLOOP-AI</strong><pre class="qoute"> Building truely randomized data for a better tommorrow.</pre></div>
+     </div>
+     
+     <div id="2" class="service"><h1>Deep Learning</h1>
+     <div class="container2"> 
+     <pre>Working with the CADTb</pre><hr>
+     <h3>Machine Learning and Web Development</h3>
+     <img src="./o.jpg" alt="writings">
+     <p class="box">End to End machine larning with Tensorflow on Google Cloud Platform.</p><hr>
+     
+     <h3>YrwynmyrDB</h3>
+     <img src="./AI.png"alt="YrwynmyrDB">
+     <p class="box"></p>Detailed paragraph</p><hr>
+    
+    <h3>Reviews</h3>
+    <img src="./l.jpg" alt="reviews">
+     <p class="box"></p>
+     </div>
+     </div>
+     
+     <div id="3" class="contact">
+     <h1>Contact Us</h1>
+  <form class="container2" action="/"  method="post">
   <div>
-    <div class="title">
-      <h2>
-		  <img src="./shirt.png"/></h2>
-      <br /> <h1>Building and Analyzing Truly Randomized Data for a Better Tomorrow</h1>
+    <label>Name</label>
+    <input type="text" placeholder="Enter Your Name" required  autocomplete="off">
     </div>
-  </div>
-  <a href="#bio" class="btn btn-circle"> <i class="angle-double-down"></i></a>
-</header>
-<!--Bio -->
-<section id="bio">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-12">
-	      <h1>Limitless Self-Generating Truly Randomizied Data</h1>
-        <h2>Rewarding AI Starts Now</h2> 
-      </div>
-    </div> <!-- first row end -->
-<div class="row">
-  <div class="col-lg-2"></div>
-  <div class="col-12 col-lg-8 text-justify">
-    <p>I am trying to develop a new and extraordinary way of rewarding AI technologies.</p>
-  </div>
-</div><!-- second row end-->
-</div><!--Container end-->
-
-</section>
-<section id="menuItem">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-12">
-        <div class="row text-center">
-          <div class="col-lg-1"></div>
-          <div class="menuItem-left col-4 col-lg-4">
-
-          </div>
-          <!--menuItem left end-->
-<div class="menuItem-right col-8 col-lg-5">
-  <span><i class=""></i>
-  <i class=""></i></span>
-<br />
-<footer><cite></cite>
-</footer>
-</div><!--nested row end -->
-</div><!-- col 12 end -->
-</div>
-</div>
-</div></section>
-<section class id="Garrett">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-12">
-        <h2>Team</h2> <hr>
-      </div>
-    </div><!--end first row-->
-    <div class="row">
-      <div class="col-12 col-lg-8 text-justify">
-        <p>Garrett Johnson</p>
-      </div>
-      <div class="col-lg-2"></div>
-    </div><!--end second row-->
-    <div class="row">
-      <div class="col-12 col-lg-8">
-      <p>David Faulk</p>
-        <footer>
-        </footer>
-      </div>
-      <div class="col-lg-2"></div>
-    </div><!--end third row-->
-  </div><!--end container-->
-</section>
-<!--Another scroll page-->
-<section id="Rebirther">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-12"><h2>hello</h2> <hr>
-      </div>
-    </div> <!--first row end-->
-    <div class="row">
-      <div class="col-lg-2"></div>
-      <div class="col-12 col-lg-8 text-justify">
-      <ol>
-        <li>hello</li>
-        <li></li>
-        <li></li>
-      </ol>
-    </div><!-- second row end-->
-    <div class="col-6 col-lg-5">
-
+    <div>
+    <label>Email ID</label>
+    <input type="email" placeholder="Enter Your Email ID" required  autocomplete="off">
     </div>
-    <div class="col-lg-2"></div>
-  </div><!-- nested second row end-->
-  <div class="row">
-    <div class="col-lg-2"></div></div>
-    <div class="col-12 col-lg-8">
-   </div>
-  <div class="col-lg-2"></div>
-</div><!--third nested row ends-->
-</div><!--col-12 ends-->
-</div><!--primary row ends-->
-</div><!--container ends-->
-</section>
-<section id="">
-           <div class="container">
-               <div class="row">
-                   <div class="col-12 col-lg-12">
-                       <h2></h2> <hr>
-                   </div>
-               </div> <!-- First Row end -->
-               <div class="row">
-                   <div class="col-lg-2"></div>
-                   <div class="col-12 col-lg-8 text-justify">
-                  <p></p></div>
-                   <div class="col-lg-2"></div>
-               </div> <!-- Second Row end -->
-               <div class="row">
-                   <div class="col-lg-2"></div>
-                   <div class="col-12 col-lg-8">
-					   <h2><a href="https://github.com/YrwynmyrDB/Mindset11">Soar-AI.ipynb</a></h2>
-                     <a href="https://github.com/YrwynmyrDB/Mindset11"> <img src="./Soar-AI.png"/> </a>
-                       
-                       <footer class="blockquote-footer" style="margin-top:2%;">
-                          
-                       </footer><div id="Content">
-                   </div> <div class="row">
-                   <div class="col-lg-2"></div>
-                   <div class="col-12 col-lg-8">
-					   <h2><a href="https://github.com/YrwynmyrDB/Mindset11">Rebirther.ipynb</a></h2>
-                     <a href="https://github.com/YrwynmyrDB/Mindset11">  <img src="./Rebirther.png"/></a>
-                       
-                       <footer class="blockquote-footer" style="margin-top:2%;">
-                          
-                       </footer>
-                   </div>
-                    <div class="col-12 col-lg-8">
-			
-			    <h2><a href="https://dowsing-star.herokuapp.com/">CADTb</a></h2>
-			    <a href="https://dowsing-star.herokuapp.com/">
-				    <img src="./CADTb.png"/></a>
-                       
-                       <footer class="blockquote-footer" style="margin-top:2%;">
-                          
-                       </footer>
-                   </div>
-                   <div class="col-lg-2">.<a href="https://photos.app.goo.gl/hnvqhkaxCiVNzvy5A">A Video of the CADTb in action</a>
-		       </div>
-		         <div class="col-12 col-lg-8">
-			
-			     <div class="col-12 col-lg-8">
-			
-			    <h2><a href="https://soar-ai.herokuapp.com/">DataLab</a></h2>
-			    <a href="https://soar-ai.herokuapp.com/">
-				    
-                       
-                       <footer class="blockquote-footer" style="margin-top:2%;">
-                          
-                       </footer>Profolio</a></h2>
-			    <a href="https://dowsing-star.herokuapp.com/">
-				    <img src="./CADTb.png"/></a>
-                       
-                       <footer class="blockquote-footer" style="margin-top:2%;">
-                          
-				 </footer></div>
-               </div> <!-- Third Row end -->
-           </div> <!-- Container end -->
-       </section>
+    <div>
+    <label>Mobile No.</label>
+    <input type="tel" placeholder="Enter Your Contact Number">
+    </div>
+    <div>
+    <label>Message</label>
+    <textarea id="msg" placeholder="Enter Your Message" required autocomplete="off"></textarea>
+    </div>
+    <button type="Submit" name="button" value="Submit">Submit</button>
+</form>
+     </div>
+     
+ <div class="follow">
 
-
-<!-- Bootstrap JS V4 and JQuery V3.3.1 -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-<script>
-  window.sr = ScrollReveal();
-
-  sr.reveal('.btn' , {
-    duration: 2000,
-    origin: 'top',
-    distance: '60px',
+ 
+     <footer><p> YrwynmyrDB Copyright &copy; 2018. All Rights Reserved.</p></footer>
+  </div>
+  <script>$(function(){
+   $('.menu').on('click',function(){
+      $('.nav1').toggleClass('open');
+   });
+  $(".nav1 ul li").click(function(){
+      $(".nav1").toggleClass('open')     
+      $(".menu").toggleClass("change");
   });
-
-  sr.reveal('#menuItem', {
-    duration: 200,
-    origin: 'bottom',
-    distance: '-30px',
-    veiwFactor: 0.1,
-    reset: true
-  });
-
-  sr.reveal('#DosLocosGringos', {
-              duration: 2000,
-              origin: 'left',
-              distance: '20px',
-              viewFactor: 0.1,
-
-              reset: true
-          });
-
+   $(".menu").click(function(){
+       $(this).toggleClass("change");
+   })
+   
+});
 </script>
-<!-- BACK TO TOP FIXED BUTTON -->
-    <script>
-         $(document).ready(function() {
-             // Dinamically add the back-to-top button to the HTML
-             $('body').prepend('<a href="#menuItem" class="btn btn-circle back-to-top"><i class="fa fa-angle-double-up"></i></a>');
-             // Show the back-to-top button when the user scrolls 580px from the top
-             $(window).scroll(function() {
-                if ($(this).scrollTop() > 580) {
-                      $('.back-to-top').fadeIn('slow');
-                 } else {
-                     $('.back-to-top').fadeOut();
-                 }
-             });
-         });
-
-    </script>
-
-  </body>
-  </html>
-
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</body>
 </html>
+
